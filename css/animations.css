@@ -1,0 +1,29 @@
+/* ── CUSTOM ANIMATIONS (Non-GSAP) ── */
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.95); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.float-anim {
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes drawLine {
+  from { height: 0; }
+  to { height: 50px; }
+}
+
+/* GSAP Handles most scroll reveals, but we can set initial states */
+.gsap-reveal {
+  /* Removed visibility: hidden to ensure content never gets stuck hidden if JS is slow */
+}
+
+/* Utility classes for GSAP to target */
+.char, .word { display: inline-block; }

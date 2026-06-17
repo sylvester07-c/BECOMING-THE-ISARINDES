@@ -1,0 +1,222 @@
+/* ── TOUCH SCROLL MOMENTUM (iOS) ── */
+.gallery-scroll-container,
+.timeline-strip,
+.tab-row {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── 1200px ── */
+@media (max-width: 1200px) {
+  .wrap { padding: 0 2rem; }
+  .story-layout { gap: 3.5rem; }
+  .hero-title { font-size: clamp(4rem, 10vw, 7rem); }
+}
+
+/* ── 992px ── */
+@media (max-width: 992px) {
+  .events-grid { grid-template-columns: 1fr; }
+  .places-grid { grid-template-columns: 1fr 1fr; }
+  .gifts-grid { grid-template-columns: 1fr; }
+  .forms-grid { grid-template-columns: 1fr; }
+  .hotel-grid { grid-template-columns: 1fr; }
+
+  .story-layout { grid-template-columns: 1fr; }
+  .story-photo-wrapper { max-width: 500px; margin: 0 auto; }
+}
+
+/* ── 768px — primary mobile breakpoint ── */
+@media (max-width: 768px) {
+  /* Nav */
+  nav { padding: 0 1.25rem; height: 60px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .scroll-progress { top: 60px; }
+
+  /* Global spacing */
+  section { padding: 5rem 0; }
+  .wrap { padding: 0 1.25rem; }
+
+  /* Hero */
+  .hero-top-ornament {
+    font-size: 0.55rem;
+    letter-spacing: 0.3em;
+    gap: 0.6rem;
+    flex-direction: column;
+  }
+  .hero-top-ornament::before,
+  .hero-top-ornament::after { display: none; }
+
+  .hero-sub {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    padding: 0 1rem;
+  }
+  .hero-verse { font-size: 1rem; padding: 0 0.5rem; }
+  .hero-content { padding: 0 0.75rem; }
+
+  /* Countdown */
+  .countdown { gap: 1.5rem; }
+  .cd-num { font-size: 2rem; }
+  .cd-dot { font-size: 1.5rem; }
+
+  /* Section eyebrow — reduce tracking so long Yorùbá text fits */
+  .section-eyebrow { letter-spacing: 0.22em; font-size: 0.62rem; }
+
+  /* Story */
+  .story-pull { font-size: 1.4rem; padding-left: 1.3rem; }
+  .story-pull::before { left: 0; font-size: 3rem; }
+
+  /* Events */
+  .event-card { padding: 2.5rem 1.75rem; }
+  /* Hide the tl-dot on mobile (it overflows the strip at small sizes) */
+  .tl-dot { display: none; }
+  .timeline-strip { padding: 2rem 1.5rem; border-radius: var(--radius-sm); }
+  .tl-item { min-width: 140px; padding: 0 1rem; }
+  .tl-time { font-size: 1.2rem; }
+
+  /* Travel tabs */
+  .tab-row { margin: 2rem 0; gap: 0; }
+  .t-btn { padding: 0.75rem 0.9rem; font-size: 0.65rem; letter-spacing: 0.14em; }
+
+  /* Route + Info */
+  .route-card { padding: 1.5rem; }
+  .route-header { gap: 0.75rem; }
+  .route-body { font-size: 0.95rem; }
+  .info-box { padding: 1.2rem 1.25rem; font-size: 0.9rem; }
+  .info-box i, .info-box svg { flex-shrink: 0; }
+
+  /* Accommodation */
+  .hotel-body { padding: 1.5rem; }
+  .hotel-header { padding: 1.2rem 1.5rem; }
+  .hotel-name { font-size: 1.5rem; }
+
+  /* Places — switch to swiper */
+  .places-grid { display: none; }
+  .swiper { display: block; }
+  .place-card { padding: 1.5rem; }
+
+  /* Gifts */
+  .gift-card { padding: 2.5rem 1.5rem; }
+  .gift-btn { min-height: 48px; }
+
+  /* Forms */
+  .form-card { padding: 2rem 1.5rem; }
+  .form-num { font-size: 2.5rem; }
+  .form-title { font-size: 1.3rem; }
+  /* Full-width button — better touch target on mobile */
+  .form-btn {
+    align-self: stretch;
+    justify-content: center;
+    min-height: 48px;
+    width: 100%;
+  }
+
+  /* Corporate family — stack cards on small screens */
+  .corp-grid { flex-direction: column; align-items: center; }
+  .corp-card { width: 100%; max-width: 420px; }
+
+  /* Contact */
+  .contact-bar { padding: 5rem 0; }
+  .contact-grid { gap: 1.5rem; flex-direction: column; align-items: center; }
+  .contact-item {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    min-width: unset;
+  }
+
+  /* Footer */
+  .footer-script { font-size: 3.8rem; }
+  footer { padding: 5rem 1rem 3.5rem; }
+
+  /* Modal */
+  .modal { padding: 2rem; margin: 1rem; }
+  .modal-title { font-size: 1.6rem; }
+  .modal-btns { gap: 0.75rem; }
+}
+
+/* ── 480px — mid-small phones ── */
+@media (max-width: 480px) {
+  section { padding: 4.5rem 0; }
+
+  .section-heading { font-size: 2.5rem; }
+  .section-body { font-size: 1rem; }
+
+  .hero-title { font-size: 4rem; }
+  .countdown { gap: 1rem; }
+  .cd-num { font-size: 1.8rem; }
+  .cd-dot { font-size: 1.2rem; margin-top: -0.8rem; }
+
+  .events-grid { gap: 1.5rem; }
+  .event-card { padding: 2.25rem 1.5rem; }
+  .event-number { font-size: 7rem; right: -0.5rem; bottom: -1rem; }
+  .event-name { font-size: 1.3rem; }
+
+  .gifts-grid { gap: 1.5rem; }
+  .forms-grid { gap: 1.5rem; }
+  .hotel-grid { gap: 2rem; }
+
+  .footer-script { font-size: 3.2rem; }
+}
+
+/* ── 400px — small phones ── */
+@media (max-width: 400px) {
+  .wrap { padding: 0 1rem; }
+
+  .hero-title { font-size: 3.2rem; }
+  .countdown { gap: 0.6rem; }
+  .cd-num { font-size: 1.5rem; }
+  .cd-dot { font-size: 1.2rem; margin-top: -0.6rem; }
+  .cd-label { font-size: 0.52rem; letter-spacing: 0.18em; }
+  .hashtag-badge { padding: 0.6rem 1.2rem; font-size: 0.62rem; }
+  .hero-sub { font-size: 0.58rem; letter-spacing: 0.15em; }
+
+  .section-heading { font-size: 2.1rem; }
+  .section-eyebrow { letter-spacing: 0.18em; }
+
+  .event-card { padding: 2rem 1.25rem; }
+  .event-name { font-size: 1.25rem; }
+
+  .tab-row { gap: 0; }
+  .t-btn { padding: 0.7rem 0.7rem; font-size: 0.6rem; letter-spacing: 0.1em; }
+
+  .route-body { font-size: 0.92rem; }
+
+  .gift-card { padding: 2rem 1.2rem; }
+  .form-card { padding: 1.75rem 1.2rem; }
+
+  .btn-copy,
+  .btn-wa { width: 100%; justify-content: center; }
+  .modal-btns { flex-direction: column; }
+
+  .footer-script { font-size: 2.8rem; }
+  footer::before { margin-bottom: 3rem; }
+
+  .corp-card { padding: 2rem 1.5rem; }
+  .corp-contact-name { font-size: 1.7rem; }
+}
+
+/* ── 320px — very small phones (e.g. iPhone SE 1st gen) ── */
+@media (max-width: 340px) {
+  .wrap { padding: 0 0.875rem; }
+
+  .hero-title { font-size: 2.8rem; }
+  .cd-num { font-size: 1.3rem; }
+  .cd-dot { font-size: 1rem; margin-top: -0.4rem; }
+  .cd-label { display: none; } /* prevent overflow at absolute minimum width */
+
+  .section-heading { font-size: 1.9rem; }
+
+  .t-btn { font-size: 0.58rem; padding: 0.65rem 0.6rem; }
+
+  .event-card { padding: 1.75rem 1rem; }
+  .timeline-strip { padding: 1.5rem 1rem; }
+  .tl-item { min-width: 120px; padding: 0 0.75rem; }
+  .tl-time { font-size: 1rem; }
+
+  .modal { padding: 1.5rem; margin: 0.75rem; }
+
+  .gift-card { padding: 1.75rem 1rem; }
+  .form-card { padding: 1.5rem 1rem; }
+}

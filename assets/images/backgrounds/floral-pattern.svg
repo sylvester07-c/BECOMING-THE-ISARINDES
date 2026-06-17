@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <pattern id="botanical" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#1A2E5E" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+
+        <!-- Main vertical stem -->
+        <path d="M100 175 Q97 150 100 125 Q103 100 100 75"/>
+
+        <!-- Left branch -->
+        <path d="M99 148 Q84 136 70 128"/>
+        <!-- Left leaf -->
+        <path d="M70 128 Q54 116 56 104 Q68 114 70 128"/>
+
+        <!-- Right branch -->
+        <path d="M100 158 Q116 146 130 138"/>
+        <!-- Right leaf -->
+        <path d="M130 138 Q146 128 148 116 Q136 124 130 138"/>
+
+        <!-- Small left twig -->
+        <path d="M97 130 Q88 122 80 118"/>
+        <!-- Small left leaf -->
+        <path d="M80 118 Q72 110 74 103 Q82 109 80 118"/>
+
+        <!-- Top blossom — 5 petals around centre -->
+        <circle cx="100" cy="72" r="2.5"/>
+        <path d="M100 72 Q106 62 100 55 Q94 62 100 72"/>
+        <path d="M100 72 Q110 66 112 57 Q104 60 100 72"/>
+        <path d="M100 72 Q110 78 112 87 Q104 84 100 72"/>
+        <path d="M100 72 Q90 78 88 87 Q96 84 100 72"/>
+        <path d="M100 72 Q90 66 88 57 Q96 60 100 72"/>
+
+        <!-- Delicate corner flourishes -->
+        <path d="M12 12 Q20 6 28 12 Q20 18 12 12"/>
+        <path d="M188 12 Q180 6 172 12 Q180 18 188 12"/>
+        <path d="M12 188 Q20 194 28 188 Q20 182 12 188"/>
+        <path d="M188 188 Q180 194 172 188 Q180 182 188 188"/>
+
+        <!-- Corner dots -->
+        <circle cx="12" cy="12" r="1.4"/>
+        <circle cx="188" cy="12" r="1.4"/>
+        <circle cx="12" cy="188" r="1.4"/>
+        <circle cx="188" cy="188" r="1.4"/>
+
+        <!-- Tiny buds along stem -->
+        <circle cx="97" cy="140" r="1.2"/>
+        <circle cx="101" cy="115" r="1"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#botanical)"/>
+</svg>
