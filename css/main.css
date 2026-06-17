@@ -263,7 +263,7 @@ nav.nav-hidden {
   text-align: center;
   position: relative;
   overflow: clip;
-  padding: 0;
+  padding: 70px 0 0;
   z-index: 1;
 }
 
@@ -293,7 +293,7 @@ nav.nav-hidden {
 .hero-content {
   z-index: 1;
   padding: 0 1.5rem;
-  margin-top: 2vh;
+  margin-top: 4vh;
 }
 
 .hero-top-ornament {

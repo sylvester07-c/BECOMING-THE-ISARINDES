@@ -32,6 +32,9 @@
   .hamburger { display: flex; }
   .scroll-progress { top: 60px; }
 
+  /* Hero nav clearance on mobile */
+  .hero { padding-top: 60px; }
+
   /* Global spacing */
   section { padding: 5rem 0; }
   .wrap { padding: 0 1.25rem; }
